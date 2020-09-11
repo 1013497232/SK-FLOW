@@ -133,7 +133,7 @@ while (True):
             if choice2 == 1:
                 study = myKnn.myKnn(x_train, y_train, x_test, y_test, False)
             elif choice2 == 2:
-                study = mySVC.mySVC(x_train, y_train, x_test, y_test, False)
+                study = mySVC.mySVC(x_train, y_train, x_test, y_test, 'sigmoid', False)
             elif choice2 == 3:
                 study = MyLogiRe.MyLogiRe(x_train, y_train, x_test, y_test, False)
             elif choice2 == 4:
@@ -162,7 +162,7 @@ while (True):
             if choice2 == 1:
                 study = myKnn.myKnn(None, None, x_test, y_test, True)
             elif choice2 == 2:
-                study = mySVC.mySVC(None, None, x_test, y_test, True)
+                study = mySVC.mySVC(None, None, x_test, y_test, 'sigmoid', True)
             elif choice2 == 3:
                 study = MyLogiRe.MyLogiRe(None, None, x_test, y_test, True)
             elif choice2 == 4:
